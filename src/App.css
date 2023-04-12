@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+h3, nav a, footer a {
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  letter-spacing: 0.095em;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: top;
+}
+
+nav ul, footer ul {
+  padding-right: 50px;
+  padding-top: 32px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+nav a, footer a {
+  padding: 8px;
+}
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: top;
+}

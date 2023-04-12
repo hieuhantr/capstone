@@ -8,8 +8,8 @@ import './App.css';
 function App() {
   return (
     <>
+    About
      <Header/> 
-     <Nav/>
      <Main/>
      <Footer/> 
     </>

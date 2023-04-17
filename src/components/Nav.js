@@ -1,26 +1,32 @@
-import img from '../images/logo.png';
+import {Link} from 'react-router-dom';
+import CTAButton from './CTAButton';
 
 function Nav() {
     return (
-        <nav> 
+        <>
+        <nav>
             <div>
-                <img src={img} alt="Delarosa logo"/>
-            </div>
+                <Link to="/">
+                    <img src={'https://i.ibb.co/q7cgn0B/logo.png'} alt="Delarosa logo"/></Link>
+            </div> 
             <ul>
                 <li>
-                   <a href="../About.js"> LOCATIONS </a>
+                <h3>  LOCATIONS  </h3>
                 </li>
-                <li>
+                <h3> <li>
                     <a>MENU</a>
-                </li>
-                <li>
-                    <a>ABOUT</a>
-                </li>
-                <li>
+                </li> </h3>
+                <h3> <li>
+                <Link to="/about-me">ABOUT</Link>
+                </li> </h3>
+                <h3> <li>
                     <a>GIFT CARDS</a>
-                </li>
+                </li> </h3>
+                    <CTAButton theme='light' link="/reserve">RESERVE / WAITLIST</CTAButton>
             </ul>
         </nav>
+        
+        </>
     )
 }
 
